@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Bhavya!</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(to top, #f9c2c2, #c2eefa);
+            overflow: hidden;
+            font-family: 'Arial', sans-serif;
+        }
+        h1 {
+            font-size: 5em;
+            color: #ff99ff;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+            animation: glown 1.5s infinite alternate;
+        }
+        @keyframes glown {
+            0% { text-shadow: 0 0 20px rgba(255, 255, 255, 0.8); }
+            100% { text-shadow: 0 0 30px rgba(255, 255, 255, 1); }
+        }
+        .balloon {
+            position: absolute;
+            width: 100px;
+            height: 130px;
+            background: red;
+            border-radius: 50% 50% 0 0;
+            animation: bounce 3s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-30px); }
+        }
+
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: yellow;
+            animation: fall 3s infinite;
+        }
+        @keyframes fall {
+            to { transform: translateY(100vh); }
+        }
+    </style>
+</head>
+<body>
+    <h1>Happy Birthday, Bhavya!</h1>
+    <div class="balloon" style="top: 20%; left: 10%; animation-delay: 0s;"></div>
+    <div class="balloon" style="top: 30%; left: 30%; animation-delay: 1s;"></div>
+    <div class="balloon" style="top: 40%; left: 50%; animation-delay: 2s;"></div>
+    <div class="confetti" style="top: -10%; left: 50%; animation-delay: 0s;"></div>
+    <div class="confetti" style="top: -10%; left: 60%; animation-delay: 1s;"></div>
+    <audio controls>
+        <source src="your-music-url.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <script>
+        // JavaScript for additional animations or interactions can be added here
+    </script>
+</body>
+</html>
